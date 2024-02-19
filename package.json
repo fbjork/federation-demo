@@ -1,0 +1,12 @@
+{
+  "name": "federation-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "grafbase start",
+    "dev": "grafbase dev"
+  },
+  "author": "Fredrik Björk <fredrik@grafbase.com>",
+  "license": "ISC"
+}
