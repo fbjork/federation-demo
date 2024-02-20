@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "grafbase start",
-    "dev": "grafbase dev"
+    "dev": "pnpm -r dev"
   },
   "author": "Fredrik Björk <fredrik@grafbase.com>",
   "license": "ISC"

@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "grafbase dev",
-    "start": "grafbase start"
+    "dev": "grafbase dev --port 4001",
+    "start": "grafbase start",
+    "publish:dev": "grafbase publish --dev --name products --url http://localhost:4001/graphql"
   },
   "keywords": [],
   "author": "",

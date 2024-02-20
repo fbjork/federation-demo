@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "grafbase dev",
+    "dev": "grafbase dev --port 4000",
     "start": "grafbase start"
   },
   "keywords": [],

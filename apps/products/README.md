@@ -1,15 +1,12 @@
-## Grafbase Products Subgraph
-
-Configures a Products subgraph that is to be composed with a Reviews subgraph to add product reviews.
+## Products Subgraph
 
 Schema:
 
 ```graphql
-type Product {
+type Product @key(fields: "id") {
   id: ID!
   title: String!
   description: String!
   price: Int!
-  reviews: Review[]
 }
 ```
