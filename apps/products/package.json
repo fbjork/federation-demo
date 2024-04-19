@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@grafbase/sdk": "~0.18.0",
-    "grafbase": "^0.58.0"
+    "@grafbase/sdk": "~0.21.0",
+    "grafbase": "^0.69.0"
   }
 }

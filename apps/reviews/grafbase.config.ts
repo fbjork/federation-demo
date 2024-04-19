@@ -10,6 +10,11 @@ const review = g
   })
   .key("id");
 
+g.query("reviews", {
+  returns: g.ref(review).list(),
+  resolver: "reviews",
+});
+
 g.type("Product", {
   id: scalar.id(),
   reviews: g.ref(review).list().resolver("reviews"),
