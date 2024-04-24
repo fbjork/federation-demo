@@ -23,8 +23,8 @@ importers:
         specifier: ~0.21.0
         version: 0.21.0
       grafbase:
-        specifier: ^0.69.0
-        version: 0.69.0
+        specifier: ^0.70.0
+        version: 0.70.0
 
   apps/reviews:
     devDependencies:
@@ -32,13 +32,21 @@ importers:
         specifier: ~0.21.0
         version: 0.21.0
       grafbase:
-        specifier: ^0.69.0
-        version: 0.69.0
+        specifier: ^0.70.0
+        version: 0.70.0
 
 packages:
 
   /@grafbase/cli-aarch64-apple-darwin@0.69.0:
     resolution: {integrity: sha512-cGfIr1Hlop4Eme8pM4FseIQpWtY/oJt8PyPaR7mj8Ega48BgeCxr0DEJeluJP82G4vQdB3P68+dXnFE9DP1Gjw==}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@grafbase/cli-aarch64-apple-darwin@0.70.0:
+    resolution: {integrity: sha512-5zCHcBk9XrrlJGH7GuCPFp9mAQutP1oIvly9x43qv9/m3uo/P49N0LST5ZQRqVrIZpZj/2bsy00ty/BrwOm3KQ==}
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
@@ -53,8 +61,24 @@ packages:
     dev: true
     optional: true
 
+  /@grafbase/cli-aarch64-unknown-linux-musl@0.70.0:
+    resolution: {integrity: sha512-RoydCbNa/Q/FVhhHaorwCqbEweNa9+UHD5NGDpCeimuuzAvAtiJqj+ZyP7kcPNg2A/jObxvtNT58zj2PHZXPFg==}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
   /@grafbase/cli-x86_64-apple-darwin@0.69.0:
     resolution: {integrity: sha512-bHQGoRcbCJEW4WaHeMy8Ohgsn9ckzKQORhtnATtCgNDAccRsiHdrO82Qbnk/zQNSsvtavlTCXTrQkquHuytGVg==}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@grafbase/cli-x86_64-apple-darwin@0.70.0:
+    resolution: {integrity: sha512-XV30wo03Eu+KjM3WFpfJG3DE7Wu2gpfbrweRdzM3q9EUDxzB1czx5c6jliOqtpHstioMDUROnZ0lklSMjZlnYA==}
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
@@ -69,8 +93,24 @@ packages:
     dev: true
     optional: true
 
+  /@grafbase/cli-x86_64-pc-windows-msvc@0.70.0:
+    resolution: {integrity: sha512-vl6cv+Hb+FwSFNTKMawxpMq2a79gz0PSoZNR6rG5oXgL9HF9c8PCqRzgG7OnLQhKR0C6uzGUpyKnC4YVCetHUw==}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
   /@grafbase/cli-x86_64-unknown-linux-musl@0.69.0:
     resolution: {integrity: sha512-ygUHQytAXT5W4bTOLXZepoUoJ1EtZ3TBdqcV1Q7SUu2FtsRBG/zVXY6J5QlpXt0uyTejWL1Nz+WaQ706POi+gQ==}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@grafbase/cli-x86_64-unknown-linux-musl@0.70.0:
+    resolution: {integrity: sha512-066UL/ZxFO6YDVJad5TpFn4HT9uGkmaJ/kGjAOpn2/hCvzylRX2yWyjHIbOb0aVN4io+5B6YUa39p8gaGUR13g==}
     cpu: [x64]
     os: [linux]
     requiresBuild: true
@@ -100,6 +140,18 @@ packages:
       '@grafbase/cli-x86_64-apple-darwin': 0.69.0
       '@grafbase/cli-x86_64-pc-windows-msvc': 0.69.0
       '@grafbase/cli-x86_64-unknown-linux-musl': 0.69.0
+    dev: true
+
+  /grafbase@0.70.0:
+    resolution: {integrity: sha512-4+7a5jOqYyX/bWMeVzIorzyPt7Y9mAT1QnW8JmvIx5V4e3rrh6Nzxbe59wqBLqGGR6rHXpOrzTgP+ZuacShRjA==}
+    hasBin: true
+    requiresBuild: true
+    optionalDependencies:
+      '@grafbase/cli-aarch64-apple-darwin': 0.70.0
+      '@grafbase/cli-aarch64-unknown-linux-musl': 0.70.0
+      '@grafbase/cli-x86_64-apple-darwin': 0.70.0
+      '@grafbase/cli-x86_64-pc-windows-msvc': 0.70.0
+      '@grafbase/cli-x86_64-unknown-linux-musl': 0.70.0
     dev: true
 
   /type-fest@4.10.2:
