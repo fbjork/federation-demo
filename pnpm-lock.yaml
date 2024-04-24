@@ -8,18 +8,27 @@ importers:
 
   .:
     devDependencies:
-      '@grafbase/sdk':
-        specifier: ~0.21.0
-        version: 0.21.0
       grafbase:
         specifier: ^0.70.0
         version: 0.70.0
 
-  apps/gateway: {}
+  apps/gateway:
+    devDependencies:
+      '@grafbase/sdk':
+        specifier: ~0.21.0
+        version: 0.21.0
 
-  apps/products: {}
+  apps/products:
+    devDependencies:
+      '@grafbase/sdk':
+        specifier: ~0.21.0
+        version: 0.21.0
 
-  apps/reviews: {}
+  apps/reviews:
+    devDependencies:
+      '@grafbase/sdk':
+        specifier: ~0.21.0
+        version: 0.21.0
 
 packages:
 
