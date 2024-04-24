@@ -13,12 +13,12 @@ export default async function resolver() {
     },
     {
       id: "2",
-      content: "Adidas Running Shoe",
+      content: "Best ever!",
       rating: 4,
     },
     {
       id: "3",
-      content: "Hoka Running Shoe",
+      content: "Great fit",
       rating: 3,
     },
   ];
