@@ -7,5 +7,9 @@
     "dev": "pnpm -r dev"
   },
   "author": "Fredrik Björk <fredrik@grafbase.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@grafbase/sdk": "~0.21.0",
+    "grafbase": "^0.70.0"
+  }
 }
