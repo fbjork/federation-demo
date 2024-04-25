@@ -1,20 +1,19 @@
-import { graph, config, scalar } from "@grafbase/sdk";
+import { graph, config } from "@grafbase/sdk";
 
-const g = graph.Standalone({ subgraph: true });
+const typeDefs = /* GraphQL */ `
+  type Product @key(fields: "id") {
+    id: ID!
+    title: String!
+    description: String!
+    price: Int!
+  }
 
-const product = g
-  .type("Product", {
-    id: scalar.id(),
-    title: scalar.string(),
-    description: scalar.string(),
-    price: scalar.int(),
-  })
-  .key("id");
+  type Query {
+    products: [Product!]! @resolver(name: "products")
+  }
+`;
 
-g.query("products", {
-  returns: g.ref(product).list(),
-  resolver: "products",
-});
+const g = graph.Standalone({ typeDefs, subgraph: true });
 
 export default config({
   graph: g,

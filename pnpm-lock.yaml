@@ -21,14 +21,14 @@ importers:
   apps/products:
     devDependencies:
       '@grafbase/sdk':
-        specifier: ~0.21.0
-        version: 0.21.0
+        specifier: ~0.22.0
+        version: 0.22.0
 
   apps/reviews:
     devDependencies:
       '@grafbase/sdk':
-        specifier: ~0.21.0
-        version: 0.21.0
+        specifier: ~0.22.0
+        version: 0.22.0
 
 packages:
 
@@ -74,6 +74,14 @@ packages:
 
   /@grafbase/sdk@0.21.0:
     resolution: {integrity: sha512-X1aZ4vJq6+FwarCUzQVvf2e5rGXexESdtAvBNW2MHawNL6xrSIH4CpmuRMPI/2XDEGwlDlpet4n61ZFrr3K8iQ==}
+    engines: {node: '>=16.13.0'}
+    dependencies:
+      dotenv: 16.4.4
+      type-fest: 4.10.2
+    dev: true
+
+  /@grafbase/sdk@0.22.0:
+    resolution: {integrity: sha512-Fl1PJx18o0/bnK0c5UO6BVzH2YcIN3ANgeLj3r3GmPu9mAfig851q18k0YchWmAVu+3hpqkCf4bZhixaRMLAjw==}
     engines: {node: '>=16.13.0'}
     dependencies:
       dotenv: 16.4.4
