@@ -8,5 +8,6 @@ type Product @key(fields: "id") {
   title: String!
   description: String!
   price: Int!
+  reviews: [Review!]!
 }
 ```
