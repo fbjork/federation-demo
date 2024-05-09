@@ -9,6 +9,6 @@
   "author": "Fredrik Björk <fredrik@grafbase.com>",
   "license": "ISC",
   "devDependencies": {
-    "grafbase": "^0.70.0"
+    "grafbase": "^0.71.4"
   }
 }

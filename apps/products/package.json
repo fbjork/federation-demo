@@ -11,6 +11,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@grafbase/sdk": "~0.22.0"
+    "@grafbase/sdk": "~0.24.0"
   }
 }
