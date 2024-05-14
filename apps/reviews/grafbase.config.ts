@@ -1,23 +1,24 @@
-import { graph, config } from "@grafbase/sdk";
+import { config, graph, scalar } from "@grafbase/sdk";
 
-const typeDefs = /* GraphQL */ `
-  type Review @key(fields: "id") {
-    id: ID!
-    content: String!
-    rating: Int!
-  }
+const g = graph.Standalone({ subgraph: true });
 
-  type Product @key(fields: "id") {
-    id: ID!
-    reviews: [Review!]! @resolver(name: "reviews")
-  }
+const review = g
+  .type("Review", {
+    id: scalar.id(),
+    content: scalar.string(),
+    rating: scalar.int(),
+  })
+  .key("id");
 
-  type Query {
-    reviews: [Review!]! @resolver(name: "reviews")
-  }
-`;
+g.query("reviews", {
+  returns: g.ref(review).list(),
+  resolver: "reviews",
+});
 
-const g = graph.Standalone({ typeDefs, subgraph: true });
+g.type("Product", {
+  id: scalar.id(),
+  reviews: g.ref(review).list().resolver("reviews"),
+}).key("id");
 
 export default config({
   graph: g,
