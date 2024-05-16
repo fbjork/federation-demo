@@ -9,4 +9,8 @@ type Product @key(fields: "id") {
   description: String!
   price: Int!
 }
+
+type Query {
+  products: [Product!]!
+}
 ```

@@ -12,4 +12,8 @@ type Review @key(fields: "id") {
 type Product @key(fields: "id") {
   reviews: [Review!]!
 }
+
+type Query {
+  reviews: [Review!]!
+}
 ```
