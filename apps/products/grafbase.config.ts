@@ -8,6 +8,7 @@ const product = g
     title: scalar.string(),
     description: scalar.string(),
     price: scalar.int(),
+    sku: scalar.string(),
   })
   .key("id");
 

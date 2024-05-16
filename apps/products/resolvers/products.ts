@@ -3,6 +3,7 @@ interface Product {
   title: string;
   description: string;
   price: number;
+  sku: string;
 }
 
 export default async function resolver() {
