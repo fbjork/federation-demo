@@ -1,4 +1,4 @@
-## Products Subgraph
+## Products subgraph
 
 Schema:
 
