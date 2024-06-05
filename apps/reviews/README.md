@@ -1,4 +1,4 @@
-## Reviews Subgraph
+## Reviews subgraph
 
 Schema:
 
