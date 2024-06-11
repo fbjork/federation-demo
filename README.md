@@ -1,6 +1,6 @@
 ## Grafbase Federation Demo
 
-This a federated graph composed of Products and Reviews subgraphs.
+This a federated graph composed of two subgraphs: Products and Reviews.
 
 ### Get started
 
